@@ -1,0 +1,58 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--secondary-background);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 25px 100px 25px 100px;
+}
+
+header nav ul {
+    display: flex;
+}
+header nav ul a {
+    margin-right: 25px;
+    font-size: 18px;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    transition: 0.1s ease-in;
+    font-weight: bold;
+    align-items: baseline;
+}
+header nav ul a:hover {
+    transition: 0.1s ease-in;
+    color: var(--primary-orange);
+}
+header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header .title-main {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: var(--text-color);
+    font-weight: 900;
+    font-size: 30px;
+    
+}
+header .title-main span {
+    color: var(--primary-orange);
+}
+
+header .toggle-theme {
+    height: 25px;
+}
+header .toggle-theme img {
+    width: 25px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+header .toggle-theme img:last-child {
+    margin-right: 0;
+}

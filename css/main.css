@@ -1,0 +1,9 @@
+body {
+    background-color: var(--primary-background);
+    overflow-x: hidden;
+}
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 70px 20px 0px 20px;
+}
