@@ -16,15 +16,15 @@ header nav ul {
 }
 header nav ul a {
     margin-right: 25px;
-    font-size: 18px;
+    font-size: 16px;
     color: var(--text-color);
     font-family: "Poppins", sans-serif;
-    transition: 0.1s ease-in;
+    transition: 0.2s ease-in;
     font-weight: bold;
     align-items: baseline;
 }
 header nav ul a:hover {
-    transition: 0.1s ease-in;
+    transition: 0.2s ease-in;
     color: var(--primary-orange);
 }
 header nav ul li:last-child {
