@@ -5,7 +5,7 @@
     margin-bottom: 200px;
 }
 .abilities h1 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 .abilities .container {
     display: flex;
@@ -51,10 +51,11 @@
 /* --- EXTRA INFO --- */
 .abilities .extra-ability h2 {
     text-align: center;
-    margin-bottom: 20px;
-    margin-top: 40px;
+    margin-bottom: 10px;
+    margin-top: 50px;
     color: var(--text-color);
-    font-size: 30px;
+    font-weight: 200;
+    font-size: 28px;
     font-family: "Special Gothic Expanded One", sans-serif;
 }
 .abilities .extra-ability p {
