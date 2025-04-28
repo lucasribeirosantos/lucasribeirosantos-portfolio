@@ -7,3 +7,17 @@ main{
     margin: 0 auto;
     padding: 70px 20px 0px 20px;
 }
+section h1 {
+    font-size: 50px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: var(--text-color);
+}
+section h1 span {
+    color: var(--primary-orange);
+}
+span {
+    color: var(--primary-orange);
+}
+p {
+    color: var(--text-color);
+}

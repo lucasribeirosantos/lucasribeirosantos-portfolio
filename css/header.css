@@ -41,9 +41,6 @@ header .title-main {
     font-size: 30px;
     
 }
-header .title-main span {
-    color: var(--primary-orange);
-}
 
 header .toggle-theme {
     height: 25px;

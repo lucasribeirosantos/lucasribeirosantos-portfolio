@@ -1,18 +1,12 @@
-.about .about-info h1 {
-    font-size: 50px;
-    font-family: "Special Gothic Expanded One", sans-serif;
-    color: var(--text-color);
-    margin-bottom: 20px;
-}
-.about .about-info h1 span {
-    color: var(--primary-orange);
-}
-
 .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
-    margin-top: 150px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.about .about-info h1 {
+    margin-bottom: 30px;
 }
 .about .about-info .text {
     display: flex;
@@ -20,7 +14,6 @@
     justify-content: center;
 }
 .about .about-info p {
-    color: var(--text-color);
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     margin-bottom: 20px;
@@ -29,7 +22,6 @@
 .about .about-info p:last-child {
     margin-bottom: 0;
 }
-
 .about .main-img {
     border-radius: 100%;
     width: 90%;

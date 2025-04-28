@@ -1,0 +1,111 @@
+.abilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+.abilities h1 {
+    margin-bottom: 40px;
+}
+.abilities .container {
+    display: flex;
+}
+.abilities .container .item {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center;
+    background-color: var(--secondary-background);
+    width: 150px;
+    height: 155px;
+    margin-right: 40px;
+    border-radius: 6px;
+    padding: 10px 0;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.abilities .container .item:last-child {
+    margin-right: 0;
+}
+.abilities .container .item img {
+    width: 100px;
+    height: 100px;
+}
+.abilities .container .item p {
+    font-size: 20px;
+    justify-self: center;
+    font-family: "Poppins", sans-serif;
+    color: var(--text-color);
+}
+
+/* --- HOVER --- */
+.abilities .container .item:hover {
+    scale: 1.1;
+    transition: 0.3s ease-in-out;
+    background-color: var(--primary-orange);
+}
+.abilities .container .item:hover p {
+    color: #000;
+    font-weight: 600;
+}
+
+/* --- EXTRA INFO --- */
+.abilities .extra-ability h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    color: var(--text-color);
+    font-size: 30px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+.abilities .extra-ability p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    margin-bottom: 20px;
+    font-size: 17px;
+    text-align: center;
+}
+.abilities .extra-ability p span {
+    font-size: 20px;
+    font-weight: 600;
+}
+.abilities .job-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+    mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+.abilities .wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100px;
+}
+.abilities .job-cards-container {
+    display: flex;
+    top: 0;
+    left: 0;
+    position: absolute;
+    align-items: center;
+    will-change: transform;
+    gap: 20px;
+    transition: transform 0.2s ease-out;
+}
+.abilities .job-cards-container .job-card {
+    flex: 0 0 auto;
+    height: 80px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    cursor: pointer;
+    background-color: var(--secondary-background);
+    padding: 15px 10px;
+    border-radius: 6px;
+}

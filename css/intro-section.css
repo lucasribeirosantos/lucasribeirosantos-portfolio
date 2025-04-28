@@ -25,8 +25,8 @@
 .intro h1 {
     font-weight: 500;
     font-size: 70px;
+    font-family: "Poppins", sans-serif;
 }
-
 /* --- SOCIAL --- */
 .intro .social {
     display: flex;
@@ -44,7 +44,7 @@
     width: auto;
 }
 .intro .social .linkedin-link {
-    background-image: url(../assets/images/linkedin-icon.png);
+    background-image: url(../assets/images/icons/linkedin-icon.png);
     background-size: cover;
     width: 28px;
     height: 28px;
@@ -52,7 +52,7 @@
     transition: 0.2s ease-in;
 }
 .intro .social .github-link {
-    background-image: url(../assets/images/github-icon.png);
+    background-image: url(../assets/images/icons/github-icon.png);
     background-size: cover;
     width: 32px;
     height: 32px;
@@ -60,7 +60,7 @@
     transition: 0.2s ease-in;
 }
 .intro .social .email-link {
-    background-image: url(../assets/images/email-icon.png);
+    background-image: url(../assets/images/icons/email-icon.png);
     background-size: cover;
     width: 36px;
     height: 36px;
@@ -69,15 +69,15 @@
 
 /* --- SOCIAL HOVER --- */
 .intro .social .linkedin-link:hover {
-    background-image: url(../assets/images/linkedin-hover.png);
+    background-image: url(../assets/images/hover-icons/linkedin-hover.png);
     transition: 0.2s ease-in;
 }
 .intro .social .github-link:hover {
-    background-image: url(../assets/images/github-hover.png);
+    background-image: url(../assets/images/hover-icons/github-hover.png);
     transition: 0.2s ease-in;
 }
 .intro .social .email-link:hover {
-    background-image: url(../assets/images/email-hover.png);
+    background-image: url(../assets/images/hover-icons/email-hover.png);
     transition: 0.2s ease-in;
 }
 
