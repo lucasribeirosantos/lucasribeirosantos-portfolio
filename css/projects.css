@@ -1,0 +1,73 @@
+.projects h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.projects-list .card {
+    background-color: var(--secondary-background);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 40px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* --- PROJECT TECH USED */ 
+.project-info .tech-used img {
+    width: 35px;
+    height: 35px;
+}
+
+/* --- PROJECT INFO --- */
+.project-info h2 {
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: var(--text-color);
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.project-info p {
+    margin-bottom: 30px;
+    text-align: justify;
+}
+.project-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.project-info a {
+    margin-right: 40px;
+    background-color: var(--primary-orange);
+    color: black;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+}
+.project-info a:last-child {
+    margin-right: 0;
+}
+
+/* --- IMG PREVIEW --- */
+.projects-list .card .container-img {
+    position: relative;
+    display: inline-block;
+}
+.projects-list .card .container-img img {
+    display: block;
+    width: 500px;
+    border-radius: 4px;
+    height: 315px;
+    transition: opacity 0.5s ease;
+}
+.projects-list .card .container-img img.preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.projects-list .card .container-img:hover img.preview {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.projects-list .card .container-img:hover img.project-img {
+    opacity: 0;
+}
