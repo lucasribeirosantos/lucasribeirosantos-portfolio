@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: var(--primary-background);
     overflow-x: hidden;
@@ -6,6 +9,9 @@ main{
     max-width: 1300px;
     margin: 0 auto;
     padding: 70px 20px 0px 20px;
+}
+section {
+    scroll-margin-top: 180px;
 }
 section h1 {
     font-size: 50px;

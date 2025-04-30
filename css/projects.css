@@ -33,41 +33,70 @@
     flex-direction: column;
     justify-content: center;
 }
-.project-info a {
-    margin-right: 40px;
+
+.project-info .links a {
+    margin-right: 30px;
     background-color: var(--primary-orange);
     color: black;
     font-family: "Poppins", sans-serif;
     padding: 10px 20px;
     border-radius: 4px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: 0.2s ease-in;
 }
+.project-info .links a:hover {
+    background-color: var(--primary-background);
+    color: #fff;
+    transition: 0.2s ease-in;
+}
+
 .project-info a:last-child {
     margin-right: 0;
+}
+.project-info p .link {
+    background-color: none;
+    color: var(--primary-orange);
 }
 
 /* --- IMG PREVIEW --- */
 .projects-list .card .container-img {
-    position: relative;
-    display: inline-block;
+    width: 520px;
+    height: 315px;
 }
 .projects-list .card .container-img img {
-    display: block;
-    width: 500px;
-    border-radius: 4px;
-    height: 315px;
-    transition: opacity 0.5s ease;
-}
-.projects-list .card .container-img img.preview {
-    position: absolute;
-    top: 0;
-    left: 0;
-    opacity: 0;
-}
-.projects-list .card .container-img:hover img.preview {
+    border-radius: 5px;
+    width: 100%;
+    height: 100%;
+    transition: opacity 0.5s ease; 
     opacity: 1;
-    transition: opacity 0.5s ease;
 }
-.projects-list .card .container-img:hover img.project-img {
-    opacity: 0;
+
+/* --- PROJECTS END --- */
+.end {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 200px;
+}
+.end h2 {
+    color: var(--text-color);
+    font-family: 'Special Gothic Expanded One', sans-serif;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.end p {
+    margin-bottom: 25px;
+}
+.end a {
+    background-color: var(--secondary-background);
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: 0.2s ease-in;
+}
+.end a:hover {
+    background-color: var(--primary-orange);
+    color: black;
+    transition: 0.2s ease-in;
 }

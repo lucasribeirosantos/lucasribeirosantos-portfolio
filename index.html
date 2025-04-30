@@ -23,14 +23,14 @@
     <header>
         <nav>
             <ul>
-                <a href="#sobre"><li>Sobre</li></a>
+                <a href="#about"><li>Sobre</li></a>
                 <a href="#abilities"><li>Habilidades</li></a>
-                <a href=""><li>Projetos</li></a>
-                <a href=""><li>Contato</li></a>
+                <a href="#projects"><li>Projetos</li></a>
+                <a href="#contact"><li>Contato</li></a>
             </ul>
         </nav>
 
-        <p class="title-main">Lucas<span>Ribeiro</span></p>
+        <a href="#intro" class="title-main">Lucas<span>Ribeiro</span></a>
 
         <div class="toggle-theme">
             <img src="./assets/images/moon-theme.png" alt="Black theme" class="black-theme">
@@ -39,7 +39,7 @@
     </header>
 
     <main>
-        <section class="intro">
+        <section class="intro" id="intro">
             <h3>Olá! Muito prazer!<span class="hand">👋</span></h3>
             <h1>Meu nome é Lucas</h1>
             <h3 class="front-end-dev">Desenvolvedor Front-end</h3>
@@ -54,7 +54,7 @@
             <div class="down-arrow"></div>
         </section>
 
-        <section class="about" id="sobre">
+        <section class="about" id="about">
                 <div class="about-info">
                     <h1>Sobre <span>mim:</span></h1>
 
@@ -96,7 +96,7 @@
 
                 <div class="item">
                     <img src="./assets/images/icons/api-icon.png" alt="API icon">
-                    <p>Rest API</p>
+                    <p>API</p>
                 </div>
 
                 <div class="item">
@@ -131,14 +131,15 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section class="projects" id="projects">
             <h1><span>Projetos:</span></h1>
 
             <div class="projects-list">
+
+                <!-- FIRST PROJECT -->
                 <div class="card">
-                    <div class="container-img">
-                        <img src="./assets/images/projects/githubApi-project.png" alt="Project Image" class="project-img">
-                        <img src="./assets/images/projects/githubApi-project2.png" alt="Project Image" class="preview">
+                    <div class="container-img" id="container-img">
+                        <img class="project-img" src="./assets/images/projects/gitHubApi/img1.png" data-imgs="../assets/images/projects/gitHubApi/img1.png,./assets/images/projects/gitHubApi/img2.png,./assets/images/projects/gitHubApi/img3.png,./assets/images/projects/gitHubApi/img4.png" alt="Project image">
                     </div>
 
                     <div class="project-info">
@@ -152,16 +153,115 @@
                         <p>Utilizando a API do GitHub, esse projeto faz as requisições das informações do usuário a partir do nome que é fornecido dentro do input e retorna com sua respectiva imagem de perfil, bio, seguidores e seguindo, repositórios e suas informações principais além de Create Events ou Push Events mais recentes</p>
 
                         <div class="links">
-                            <a href="#" class="project-repository">Link do Repositório</a>
-                            <a href="#" class="project-link">Link do Projeto</a>
+                            <a href="https://github.com/lucasribeirosantos/gitHub-user-search-api" target="_blank" class="project-repository">Link do Repositório</a>
+                            <a href="https://lucasribeirosantos.github.io/gitHub-user-search-api/" target="_blank" class="project-link">Link do Projeto</a>
                         </div>
                     </div>
                 </div>
 
+                <!-- SECOND PROJECT -->
+                <div class="card">
+                    <div class="container-img" id="container-img">
+                        <img class="project-img" src="./assets/images/projects/fyloPage/img1.png" data-imgs="./assets/images/projects/fyloPage/img1.png,./assets/images/projects/fyloPage/img2.png,./assets/images/projects/fyloPage/img3.png,./assets/images/projects/fyloPage/img4.png" alt="Project image">
+                    </div>
+
+                    <div class="project-info">
+                        <div class="tech-used">
+                            <img src="./assets/images/icons/html-icon.png" alt="HTML Icon">
+                            <img src="./assets/images/icons/css-icon.png" alt="CSS Icon">
+                            <img src="./assets/images/icons/javascript-icon.png" alt="JavaScript-icon">
+                        </div>
+                        <h2>Fylo Landing Page</h2>
+                        <p>Desafio proposto pela plataforma <a href="https://www.frontendmentor.io/" target="_blank" class="link">FrontEnd Mentor</a>. Landing Page completa com header, main , footer. Formulários de email funcionais com validação de informação via JavaScript. Responsivo para diversos tamanhos de tela.</p>
+
+                        <div class="links">
+                            <a href="https://github.com/lucasribeirosantos/Fylo-landing-page" target="_blank" class="project-repository">Link do Repositório</a>
+                            <a href="https://lucasribeirosantos.github.io/Fylo-landing-page/" target="_blank" class="project-link">Link do Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- THIRD PROJECT -->
+                <div class="card">
+                    <div class="container-img" id="container-img">
+                        <img class="project-img" src="./assets/images/projects/adviceApi/img1.png" data-imgs="./assets/images/projects/adviceApi/img1.png,./assets/images/projects/adviceApi/img2.png,./assets/images/projects/adviceApi/img3.png,./assets/images/projects/adviceApi/img4.png" alt="Project image">
+                    </div>
+
+                    <div class="project-info">
+                        <div class="tech-used">
+                            <img src="./assets/images/icons/html-icon.png" alt="HTML Icon">
+                            <img src="./assets/images/icons/css-icon.png" alt="CSS Icon">
+                            <img src="./assets/images/icons/javascript-icon.png" alt="JavaScript-icon">
+                            <img src="./assets/images/icons/api-icon.png" alt="API Icon">
+                        </div>
+                        <h2>Advice API - Gerador de conselhos</h2>
+                        <p>Desafio proposto pela plataforma <a href="https://www.frontendmentor.io/" target="_blank" class="link">FrontEnd Mentor</a>. Layout simples e responsivo. Consome uma API que retorna conselhos aleatórios para cada clique no botão.</p>
+
+                        <div class="links">
+                            <a href="https://github.com/lucasribeirosantos/Advice-generator-app" target="_blank" class="project-repository">Link do Repositório</a>
+                            <a href="https://lucasribeirosantos.github.io/Advice-generator-app/" target="_blank" class="project-link">Link do Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FORTH PROJECT -->
+                <div class="card">
+                    <div class="container-img" id="container-img">
+                        <img class="project-img" src="./assets/images/projects/contactForm/img1.png" data-imgs="./assets/images/projects/contactForm/img1.png,./assets/images/projects/contactForm/img2.png,./assets/images/projects/contactForm/img3.png,./assets/images/projects/contactForm/img4.png,./assets/images/projects/contactForm/img5.png" alt="Project image">
+                    </div>
+
+                    <div class="project-info">
+                        <div class="tech-used">
+                            <img src="./assets/images/icons/html-icon.png" alt="HTML Icon">
+                            <img src="./assets/images/icons/css-icon.png" alt="CSS Icon">
+                            <img src="./assets/images/icons/javascript-icon.png" alt="JavaScript-icon">
+                        </div>
+                        <h2>Formulário de contato</h2>
+                        <p>Desafio proposto pela plataforma <a href="https://www.frontendmentor.io/" target="_blank" class="link">FrontEnd Mentor</a>. Layout com informações de contato essencias para preenchimento do usuário. Cada campo reage quando recebe informação e também é validado no momento de submit do formulário. Responsivo para diversas telas.</p>
+
+                        <div class="links">
+                            <a href="https://github.com/lucasribeirosantos/Contact-form" target="_blank" class="project-repository">Link do Repositório</a>
+                            <a href="https://lucasribeirosantos.github.io/Contact-form/" target="_blank" class="project-link">Link do Projeto</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FIFTH PROJECT -->
+                <div class="card">
+                    <div class="container-img" id="container-img">
+                        <img class="project-img" src="./assets/images/projects/agenciaXYZ/img1.png" data-imgs="./assets/images/projects/agenciaXYZ/img1.png,./assets/images/projects/agenciaXYZ/img2.png,./assets/images/projects/agenciaXYZ/img3.png,./assets/images/projects/agenciaXYZ/img4.png" alt="Project image">
+                    </div>
+
+                    <div class="project-info">
+                        <div class="tech-used">
+                            <img src="./assets/images/icons/html-icon.png" alt="HTML Icon">
+                            <img src="./assets/images/icons/css-icon.png" alt="CSS Icon">
+                        </div>
+                        <h2>Agência XYZ</h2>
+                        <p>Um dos meus primeiros projetos de quando comecei nos meus estudos! Proposto pelo curso <span>DevQuest</span>. Layout de uma landing page completa para uma agência fictícia. Foi uma ótima prática de conceitos de flex e grid para um iniciante! Responsivo para diversos tamanhos de tela.</p>
+
+                        <div class="links">
+                            <a href="https://github.com/lucasribeirosantos/Grid-Flex-Landing-page" target="_blank" class="project-repository">Link do Repositório</a>
+                            <a href="https://lucasribeirosantos.github.io/Grid-Flex-Landing-page/" target="_blank" class="project-link">Link do Projeto</a>
+                        </div>
+                    </div>
+                </div>
             </div>
+
+            <div class="end">
+                <h2>Ainda tem muito por vir! A produção não para!</h2>
+                <p>Também tenho outros projetos lançados no meu GitHub, <span>convido você a conhecer!</span></p>
+                <a href="https://github.com/lucasribeirosantos" class="see-more" target="_blank">Veja mais!</a>
+            </div>
+
+        </section>
+
+        <section class="contact" id="contact">
+
         </section>
     </main>
 
     <script src="./js/animation.js"></script>
+    <script src="./js/image.js"></script>
 </body>
 </html>
