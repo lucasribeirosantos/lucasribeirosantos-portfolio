@@ -42,10 +42,6 @@
     transition: 0.3s ease-in-out;
     background-color: var(--primary-orange);
 }
-.abilities .container .item:hover p {
-    color: #000;
-    font-weight: 600;
-}
 
 /* --- EXTRA INFO --- */
 .abilities .extra-ability h2 {
