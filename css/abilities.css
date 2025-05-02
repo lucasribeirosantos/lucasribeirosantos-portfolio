@@ -48,10 +48,8 @@
     text-align: center;
     margin-bottom: 10px;
     margin-top: 50px;
-    color: var(--text-color);
     font-weight: 200;
     font-size: 28px;
-    font-family: "Special Gothic Expanded One", sans-serif;
 }
 .abilities .extra-ability p {
     font-family: "Poppins", sans-serif;

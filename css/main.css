@@ -21,10 +21,19 @@ section h1 {
 section h1 span {
     color: var(--primary-orange);
 }
+section h2 {
+    color: var(--text-color);
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
 span {
     color: var(--primary-orange);
 }
 p {
     color: var(--text-color);
     font-family: "Poppins", sans-serif;
+}
+footer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 70px 20px 0px 20px;
 }

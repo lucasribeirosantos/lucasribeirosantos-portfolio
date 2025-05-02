@@ -1,5 +1,8 @@
 .projects h1 {
     text-align: center;
+}
+.projects .subtitle {
+    text-align: center;
     margin-bottom: 30px;
 }
 .projects-list .card {
@@ -19,8 +22,6 @@
 
 /* --- PROJECT INFO --- */
 .project-info h2 {
-    font-family: "Special Gothic Expanded One", sans-serif;
-    color: var(--text-color);
     font-weight: lighter;
     margin-bottom: 10px;
 }
@@ -78,8 +79,6 @@
     margin-bottom: 200px;
 }
 .end h2 {
-    color: var(--text-color);
-    font-family: 'Special Gothic Expanded One', sans-serif;
     font-weight: lighter;
     margin-bottom: 10px;
 }

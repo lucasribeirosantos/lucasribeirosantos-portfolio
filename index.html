@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="./css/about.css">
     <link rel="stylesheet" href="./css/abilities.css">
     <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -133,6 +135,7 @@
 
         <section class="projects" id="projects">
             <h1><span>Projetos:</span></h1>
+            <p class="subtitle"><span>* </span>Passe o cursor sobre as imagens para um preview<span> *</span></p>
 
             <div class="projects-list">
 
@@ -257,9 +260,51 @@
         </section>
 
         <section class="contact" id="contact">
+            <h2 class="contact-title">Entre em <span>contato:</span></h2>
 
+            <div class="contact-container">
+                <div class="info">
+                    <h2>Vamos conversar?</h2>
+                    <p>Estou aberto a oportunidades, colaborações ou projetos interessantes. Mande uma mensagem e responderei o quanto antes.</p>
+
+                    <div class="social">
+                        <a href="https://github.com/lucasribeirosantos" target="_blank"><div>
+                            <div class="contact-gh contact-social"></div>
+                            <p class="contact-social-p">GitHub</p>
+                        </div></a>
+
+                        <a href="https://www.linkedin.com/in/lucas-ribeiro-37a375284/" target="_blank"><div>
+                            <div class="contact-lin contact-social"></div>
+                            <p class="contact-social-p">LinkedIn</p>
+                        </div></a>
+                    </div>
+
+                    <div class="local">
+                        <img src="./assets/images/icons/location.png" alt="Location">
+                        <p>Minas Gerais, Brasil</p>
+                    </div>
+                </div>
+
+                <form action="https://formsubmit.co/lucasribeirosantos.dev@gmail.com" method="POST" id="form">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Seu nome">
+
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" placeholder="Seu email">
+
+                    <label for="message">Mensagem:</label>
+                    <textarea name="message" id="message" placeholder="Insira sua mensagem" rows="6"></textarea>
+
+                    <button type="submit" id="submit-btn">Enviar</button>
+                </form>
+            </div>
         </section>
     </main>
+        <footer class="footer" id="footer">
+            <h2></h2>
+        </footer>
 
     <script src="./js/animation.js"></script>
     <script src="./js/image.js"></script>

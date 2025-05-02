@@ -28,5 +28,3 @@ document.querySelectorAll('.project-img').forEach((img)=> {
         }, 250);
     })
 })
-
-    
