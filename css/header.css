@@ -38,8 +38,7 @@ header .title-main {
     font-family: "Special Gothic Expanded One", sans-serif;
     color: var(--text-color);
     font-weight: 900;
-    font-size: 30px;
-    
+    font-size: 30px;   
 }
 
 header .toggle-theme {
