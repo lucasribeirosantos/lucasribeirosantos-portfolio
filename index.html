@@ -291,12 +291,15 @@
 
                     <label for="name">Nome:</label>
                     <input type="text" name="name" id="name" placeholder="Seu nome">
+                    <p class="required hide">Este campo é obrigatório!</p>
 
                     <label for="email">Email:</label>
                     <input type="email" name="email" id="email" placeholder="Seu email">
+                    <p class="required hide">Insira um email válido!</p>
 
                     <label for="message">Mensagem:</label>
                     <textarea name="message" id="message" placeholder="Insira sua mensagem" rows="6"></textarea>
+                    <p class="required hide">Este campo é obrigatório!</p>
 
                     <button type="submit" id="submit-btn">Enviar</button>
                 </form>
@@ -304,7 +307,7 @@
         </section>
     </main>
 
-    <footer id="footer">
+    <footer>
        <a href="#intro"><h2>Voltar para o <span>ínicio</span></h2></a>
 
         <div class="footer-body">
@@ -326,5 +329,6 @@
 
     <script src="./js/animation.js"></script>
     <script src="./js/image.js"></script>
+    <script src="./js/form.js"></script>
 </body>
 </html>

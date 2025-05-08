@@ -121,11 +121,14 @@ section.contact {
 }
 .contact-container form input {
     font-family: "Poppins", sans-serif;
-    margin-bottom: 10px;
 }
 .contact-container form textarea {
     font-family: "Poppins", sans-serif;
     resize: none;
+}
+.contact-container form label[for='email'],
+.contact-container form label[for='message'] {
+    margin-top: 10px;
 }
 
 .contact-container form input,
@@ -162,4 +165,13 @@ textarea:-webkit-autofill {
   transition:9999s ease-in-out 0s;
   background-color: var(--primary-background) !important;
   color: white;
+}
+
+/* --- FORM VALIDATION --- */ 
+.contact-container form .hide {
+    display: none;
+}
+.contact-container form .required {
+    font-size: 14px;
+    margin-top: 6px;
 }
