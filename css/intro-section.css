@@ -129,3 +129,54 @@
         background-image: url(../assets/images/arrow-animation.png);
     }
 }
+
+@media (max-width:378px) {
+    h3 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    h3 .hand {
+        width: fit-content;
+    }
+}
+
+@media (max-width:520px) {
+    .intro h3 {
+        font-size: 25px;
+    }
+    .intro h1 {
+        font-size: 60px;
+    }
+}
+
+@media (max-width: 401px) {
+    .intro h1 {
+        font-size: 50px;
+    }
+
+    .intro .social::before {
+        content: '';
+        border-bottom: 1px solid var(--primary-orange);
+        width: 40px;
+        margin-right: 20px;
+    }
+    .intro .social::after {
+        content: '';
+        border-bottom: 1px solid var(--primary-orange);
+        width: 40px;
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 390px) {
+    .intro h3 {
+        font-size: 20px;
+    }
+}
+
+@media (max-height:850px) {
+    .down-arrow {
+        display: none;
+    }
+}

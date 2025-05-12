@@ -95,7 +95,7 @@ header .toggle-theme img:last-child {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        width: 41vw;
+        width: 50vw;
         top: 9vh;
         right: 0;
         height: 91vh;
@@ -110,3 +110,4 @@ header .toggle-theme img:last-child {
         display: block;
     }
 }
+
