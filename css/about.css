@@ -25,3 +25,10 @@
     border-radius: 100%;
     width: 90%;
 }
+
+@media (max-width: 1300px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+}
