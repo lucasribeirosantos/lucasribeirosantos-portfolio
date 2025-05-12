@@ -1,0 +1,49 @@
+#download-btn {
+  background-color: #080808;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.download-cv {
+  width: 100%;
+  color: var(--text-color);
+  font-size: 30px;
+  font-family: "Special Gothic Expanded One", sans-serif;
+  font-weight: lighter;
+  z-index: 1;
+}
+
+#download-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg,transparent,rgba(255, 255, 255, 0.616),transparent);
+  transform: skewX(-20deg);
+  transition: left 0.6s ease;
+}
+
+#download-btn:hover .download-cv {
+    color: #080808;
+}
+
+#download-btn:hover::before {
+  left: 125%;
+}
+
+#download-btn:hover {
+  background-color: var(--primary-orange);
+  transform: scale(1.01);
+}
+
