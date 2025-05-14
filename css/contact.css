@@ -175,3 +175,65 @@ textarea:-webkit-autofill {
     font-size: 14px;
     margin-top: 6px;
 }
+
+@media (max-width:992px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-container .info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-right: 0;
+        width: 60%;
+    }
+    .contact-container form {
+        width: 60%;
+    }
+}
+
+@media (max-width:768px) {
+    .contact-container .info {
+        width: 70%;
+    }
+    .contact-container form {
+        width: 70%;
+    }
+}
+
+@media (max-width:600px) {
+    .contact-container .info {
+        width: 80%;
+    }
+    .contact-container form {
+        width: 80%;
+    }
+}
+
+@media (max-width:480px) {
+    .contact-container .info {
+        width: 90%;
+    }
+    .contact-container form {
+        width: 90%;
+    }
+}
+
+@media (max-width: 414px) {
+    .contact-container .info {
+        width: 100%;
+    }
+    .contact-container form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 375px) {
+    .contact .contact-title {
+        font-size: 30px;
+    }
+}
