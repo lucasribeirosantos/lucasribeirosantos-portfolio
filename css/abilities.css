@@ -4,10 +4,14 @@
     align-items: center;
     margin-bottom: 200px;
 }
+.abilities h1 {
+    margin-bottom: 30px;
+}
 .abilities .container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 40px;
 }
 .abilities .container .item {
     display: grid;
@@ -16,15 +20,10 @@
     background-color: var(--secondary-background);
     width: 150px;
     height: 155px;
-    margin-right: 40px;
-    margin-top: 30px;
     border-radius: 6px;
     padding: 10px 0;
     transition: 0.3s ease-in-out;
     box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-}
-.abilities .container .item:last-child {
-    margin-right: 0;
 }
 .abilities .container .item img {
     width: 100px;
@@ -102,4 +101,16 @@
     background-color: var(--secondary-background);
     padding: 15px 10px;
     border-radius: 6px;
+}
+
+@media (max-width:600px) {
+    .abilities h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width:375px) {
+    .abilities h1 {
+        font-size: 45px;
+    }
 }
