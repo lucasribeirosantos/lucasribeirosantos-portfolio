@@ -1,0 +1,50 @@
+@use 'reset';
+@use 'variables';
+@use 'header';
+@use 'intro';
+@use 'about';
+@use 'abilities';
+@use 'projects';
+@use 'contact';
+@use 'download';
+@use 'footer';
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: var(--primary-background);
+    overflow-x: hidden;
+}
+main{
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 70px 30px 0px 30px;
+}
+section {
+    scroll-margin-top: 180px;
+}
+section h1 {
+    font-size: 50px;
+    font-family: "Special Gothic Expanded One", sans-serif;
+    color: var(--text-color);
+}
+section h1 span {
+    color: var(--primary-orange);
+}
+section h2 {
+    color: var(--text-color);
+    font-family: "Special Gothic Expanded One", sans-serif;
+}
+span {
+    color: var(--primary-orange);
+}
+p {
+    color: var(--text-color);
+    font-family: "Poppins", sans-serif;
+}
+footer {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 70px 20px 0px 20px;
+}
