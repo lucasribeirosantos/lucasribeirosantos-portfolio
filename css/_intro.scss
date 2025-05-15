@@ -1,6 +1,11 @@
 .intro {
     height: calc(100vh - 77px);
     position: relative;
+    width: 100vw;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,6 +13,36 @@
     color: var(--text-color);
     font-family: "Poppins", sans-serif;
     text-align: center;
+    overflow: hidden;
+}
+.intro::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url(../assets/images/background.png) no-repeat center center;
+    background-size: cover;
+    filter: blur(8px);
+    z-index: 0;
+}
+.intro h3,
+.intro h1 {
+    z-index: 1;
+}
+.intro::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.03) 20%,
+    rgba(0, 0, 0, 0.08) 35%,
+    rgba(0, 0, 0, 0.15) 50%,
+    rgba(0, 0, 0, 0.3) 65%,
+    rgba(0, 0, 0, 0.5) 80%,
+    rgba(0, 0, 0, 0.7) 90%,
+    #0e0e0e 100%
+  );
+  z-index: 0;
 }
 .intro h3 {
     font-weight: 200;
@@ -107,6 +142,7 @@
     animation: bounce 2s infinite;
     opacity: 0.7;
     transition: opacity 0.3s;
+    z-index: 1;
 }
 
 /* --- ANIMATION --- */
