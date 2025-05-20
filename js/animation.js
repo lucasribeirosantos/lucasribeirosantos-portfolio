@@ -31,17 +31,3 @@ track.addEventListener('mouseleave', () => {
 });
 
 animate();
-
-// SCROLL ANIMATION
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('show');
-      observer.unobserve(entry.target); // Evita reanimar sempre
-    }
-  });
-});
-
-document.querySelectorAll('.hidden').forEach(el => {
-  observer.observe(el);
-});
