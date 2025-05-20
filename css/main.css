@@ -1159,4 +1159,27 @@ footer {
   max-width: 1300px;
   margin: 0 auto;
   padding: 70px 20px 0px 20px;
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.7s ease-out;
+}
+
+.from-left {
+  transform: translateX(-50px);
+}
+
+.from-right {
+  transform: translateX(50px);
+}
+
+.from-bottom {
+  transform: translateY(50px);
+}
+
+.show {
+  opacity: 1;
+  transform: translateX(0) translateY(0);
 }/*# sourceMappingURL=main.css.map */

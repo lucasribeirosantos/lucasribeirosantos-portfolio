@@ -25,23 +25,10 @@ main h1 {
     font-family: "Special Gothic Expanded One", sans-serif;
     font-weight: lighter;
     font-size: 4rem;
-    background: linear-gradient(to right, $primary-orange, $text-color, $primary-orange);
-    background-size: 200% auto;
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    animation: gradientColor 4s linear infinite;
+    color: $primary-orange;
     margin-top: 0;
     margin-bottom: 0;
 }
-@keyframes gradientColor {
-    0% {
-      background-position: 0% center;
-    }
-    100% {
-      background-position: 200% center;
-    }
-  }
 
 main p {
     color: $text-color;

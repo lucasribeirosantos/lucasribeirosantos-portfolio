@@ -20,24 +20,11 @@ main h1 {
   font-family: "Special Gothic Expanded One", sans-serif;
   font-weight: lighter;
   font-size: 4rem;
-  background: linear-gradient(to right, #fc6625, #d3d3d3, #fc6625);
-  background-size: 200% auto;
-  color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  animation: gradientColor 4s linear infinite;
+  color: #fc6625;
   margin-top: 0;
   margin-bottom: 0;
 }
 
-@keyframes gradientColor {
-  0% {
-    background-position: 0% center;
-  }
-  100% {
-    background-position: 200% center;
-  }
-}
 main p {
   color: #d3d3d3;
   font-family: "Poppins", sans-serif;
