@@ -2,8 +2,6 @@ document.querySelectorAll('.project-img').forEach((img)=> {
     const images = img.dataset.imgs.split(",")
     let index = 1
     let interval
-    
-    console.log(images)
 
     function changeImage (){
         img.style.opacity = 0
