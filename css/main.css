@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -351,7 +352,6 @@ header .title-main {
     align-items: center;
   }
   .intro .hand {
-    width: -moz-fit-content;
     width: fit-content;
     font-size: 25px;
   }
@@ -746,24 +746,48 @@ section.contact {
 }
 
 .contact-container .info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-bottom: 30px;
-    margin-right: 0;
-    width: 80%;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-right: 0;
+  width: 80%;
+}
 
 .contact-container .info h2 {
   font-weight: lighter;
   color: var(--primary-orange);
 }
 
+/* --- LOCAL --- */
+.contact-container .local {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-background);
+  width: max-content;
+  padding: 7px 12px 7px 5px;
+  border-radius: 6px;
+  margin-top: 10px;
+  transition: 0.2s ease-in;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container .local:hover p {
+  color: var(--primary-orange);
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.contact-container .local img {
+  width: 35px;
+  height: 35px;
+  margin-right: 5px;
+}
+
 /* --- SOCIAL --- */
 .contact-container .social {
   display: flex;
-  justify-content: center;
 }
 
 .contact-container .social div p {
@@ -775,7 +799,6 @@ section.contact {
   align-items: center;
   margin-top: 10px;
   background-color: var(--primary-background);
-  width: -moz-max-content;
   width: max-content;
   padding: 7px 12px 7px 10px;
   border-radius: 6px;
@@ -829,7 +852,6 @@ section.contact {
   border-radius: 4px;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
-  
 }
 
 .contact-container .whatsapp-div .whatsapp-button:hover {
@@ -842,12 +864,10 @@ input:-webkit-autofill,
 input:-webkit-autofill:hover,
 input:-webkit-autofill:focus,
 textarea:-webkit-autofill {
-  -webkit-transition: 9999s ease-in-out 0s;
   transition: 9999s ease-in-out 0s;
   background-color: var(--primary-background) !important;
   color: white;
 }
-
 
 @media (max-width: 992px) {
   .contact-container {
@@ -855,6 +875,12 @@ textarea:-webkit-autofill {
     align-items: center;
   }
   .contact-container .info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-right: 0;
     width: 60%;
   }
 }
@@ -1091,4 +1117,6 @@ footer {
 .show {
   opacity: 1;
   transform: translateX(0) translateY(0);
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
